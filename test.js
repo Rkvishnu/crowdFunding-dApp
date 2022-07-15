@@ -21,7 +21,7 @@ const main = async () => {
     // console.log(event);
 
   const provider = new ethers.providers.JsonRpcProvider(
-    process.env.NEXT_PUBLIC_RPC_URL
+   "https://polygon-mumbai.g.alchemy.com/v2/Me5PfrxFniiVboBMmPfoHpfyYqBS2GLf"
   );
 
   const contract = new ethers.Contract(
