@@ -24,8 +24,9 @@ const Wallet = () => {
 
 
   const connectWallet = async () => {
-    await window.ethereum.request({ method: "eth_requestAccounts" });
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+    // await provider.send({ method: "eth_requestAccounts" });  
+    await provider.send('eth_requestAccounts', []);//// this promps is used fo rconnecting to metaamsk
     if (provider.network !== "matic") {
       await window.ethereum.request({
         method: "wallet_addEthereumChain",
@@ -36,7 +37,7 @@ const Wallet = () => {
         ],
       });
     } 
-      const account = provider.getSigner();
+      const account = provider.getSigner();  
       const Address = await account.getAddress();
       setAddress(Address);
       const Balance = ethers.utils.formatEther(await account.getBalance());
