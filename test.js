@@ -20,7 +20,7 @@ const main = async () => {
   //   console.log(event);
 
   const provider = new ethers.providers.JsonRpcProvider(
-    process.env.NEXT_PUBLIC_RPC_URL
+  "https://polygon-mumbai.g.alchemy.com/v2/Me5PfrxFniiVboBMmPfoHpfyYqBS2GLf"
   );
 
   const contract = new ethers.Contract(
@@ -29,7 +29,7 @@ const main = async () => {
     provider
   );
 
-  const Donations = contract.filters.donated('0xc3Ee94A5Dd1902f7c5da78a8553010fAa5C081a0');
+  const Donations = contract.filters.donated("0xc3Ee94A5Dd1902f7c5da78a8553010fAa5C081a0");
   const AllDonations = await contract.queryFilter(Donations);
 
   const DonationsData =  AllDonations.map((e) => {
