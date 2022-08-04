@@ -1,5 +1,5 @@
 {
-  "name": "fundraiser-dapp",
+  "name": "web3-crowdfunding-dapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,5 +36,17 @@
     "terser": "^5.14.2",
     "terser-brunch": "^4.1.0",
     "uglifyify": "^5.0.2"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "hardhat.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rkvishnu/web3-crowdFunding-dApp-polygon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rkvishnu/crowdFunding-dApp/issues"
+  },
+  "homepage": "https://github.com/Rkvishnu/crowdFunding-dApp#readme"
 }

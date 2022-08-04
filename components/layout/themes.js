@@ -8,10 +8,10 @@ const light = {
 
 const dark = {
     color: '#fff',
-    bgColor: '#923cb5',
+    bgColor: '#171F24',
     bgImage: 'linear-gradient(180deg, #2f0f3d 5%, #000000 90%)',
-    bgDiv: 'black',
-    bgSubDiv: 'rgb(33, 36, 41)'
+    bgDiv: 'grey',
+    bgSubDiv: '#171F24'
 }
 
 const themes = {
