@@ -41,12 +41,12 @@
   "main": "hardhat.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rkvishnu2/web3-app.git"
+    "url": "git+https://github.com/Rkvishnu2/fundraiser-dapp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rkvishnu2/web3-app/issues"
+    "url": "https://github.com/Rkvishnu2/fundraiser-dapp/issues"
   },
-  "homepage": "https://github.com/Rkvishnu2/web3-app#readme"
+  "homepage": "https://github.com/Rkvishnu2/fundraiser-dapp#readme"
 }
