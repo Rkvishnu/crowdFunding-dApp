@@ -41,12 +41,12 @@
   "main": "hardhat.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rkvishnu/web3-crowdFunding-dApp-polygon.git"
+    "url": "git+https://github.com/Rkvishnu2/web3-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rkvishnu/web3-crowdFunding-dApp-polygon/issues"
+    "url": "https://github.com/Rkvishnu2/web3-app/issues"
   },
-  "homepage": "https://github.com/Rkvishnu/web3-crowdFunding-dApp-polygon#readme"
+  "homepage": "https://github.com/Rkvishnu2/web3-app#readme"
 }
