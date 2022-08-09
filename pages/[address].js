@@ -208,8 +208,6 @@ export async function getStaticProps(context) {
       DonationsData
     }
   }
-
-
 }
 
 

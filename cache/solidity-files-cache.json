@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/iamalfa/BLOCKCHAIN/fundraiser-dapp/contracts/Campaign.sol": {
-      "lastModificationDate": 1657898260626,
-      "contentHash": "e0533bc5ebd21901ed045a0c16936e5f",
+      "lastModificationDate": 1660045216361,
+      "contentHash": "bcbfcc48902926b3697be024f43d9c71",
       "sourceName": "contracts/Campaign.sol",
       "solcConfig": {
-        "version": "0.8.10",
+        "version": "0.8.4",
         "settings": {
           "optimizer": {
             "enabled": false,

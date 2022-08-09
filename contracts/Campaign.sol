@@ -74,3 +74,4 @@ contract Campaign {
         emit donated(msg.sender, msg.value, block.timestamp);
     }
 }
+

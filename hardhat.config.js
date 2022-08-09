@@ -12,7 +12,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY
 
 module.exports = {
-  solidity: "0.8.10",
+  solidity: "0.8.4",
   defaultNetwork: "polygon",
   networks: {
     hardhat: {},
