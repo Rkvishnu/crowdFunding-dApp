@@ -2,21 +2,20 @@ import styled from "styled-components";
 import { ethers } from "ethers";
 import { useState } from "react";
 
-
 const networks = {
-  polygon: {
-    chainId: `0x${Number(80001).toString(16)}`,
-    chainName: "Polygon Testnet",
+  Rinkeby: {
+    chainId: `4`,
+    Network: `rinkeby`,
+    chainName: `ETH`,
     nativeCurrency: {
-      name: "MATIC",
-      symbol: "MATIC",
+      name: "ETHER",
+      symbol: "ETHER",
       decimals: 18,
     },
-    rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
-    blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+    rpcUrls: ["https://rinkeby.infura.io/v3/"],
+    blockExplorerUrls: ["https://docs.etherscan.io/v/rinkeby-etherscan/"],
   },
 };
-
 
 const Wallet = () => {
   const [address, setAddress] = useState("");
@@ -24,20 +23,19 @@ const Wallet = () => {
 
 
   const connectWallet = async () => {
+    await window.ethereum.request({ method: "eth_requestAccounts" });
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-    // await provider.send({ method: "eth_requestAccounts" });  
-    await provider.send('eth_requestAccounts', []);//// this promps is used fo rconnecting to metaamsk
-    if (provider.network !== "matic") {
+    if (provider.network !== "rinkeby") {
       await window.ethereum.request({
         method: "wallet_addEthereumChain",
         params: [
           {
-            ...networks["polygon"],
+            ...networks["rinkeby"],
           },
         ],
       });
     } 
-      const account = provider.getSigner();  
+      const account = provider.getSigner();
       const Address = await account.getAddress();
       setAddress(Address);
       const Balance = ethers.utils.formatEther(await account.getBalance());
@@ -47,7 +45,7 @@ const Wallet = () => {
 
   return (
     <ConnectWalletWrapper onClick={connectWallet}>
-      {balance == '' ? <Balance></Balance> : <Balance>{balance.slice(0,4)} Matic</Balance> }
+      {balance == '' ? <Balance></Balance> : <Balance>{balance.slice(0,4)} Ether</Balance> }
       {address == '' ? <Address>Connect Wallet</Address> : <Address>{address.slice(0,6)}...{address.slice(39)}</Address>}
     </ConnectWalletWrapper>
   );

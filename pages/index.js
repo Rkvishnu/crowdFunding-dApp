@@ -47,7 +47,7 @@ export default function Index({AllData, HealthData, EducationData,AnimalData}) {
           </CardData>
           <CardData>
             <Text>Amount<PaidIcon /></Text> 
-            <Text>{e.amount} Matic</Text>
+            <Text>{e.amount}Ether</Text>
           </CardData>
           <CardData>
             <Text><EventIcon /></Text>

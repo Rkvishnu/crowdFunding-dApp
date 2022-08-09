@@ -98,11 +98,11 @@ export default function Detail({Data, DonationsData}) {
         <FundsData>
           <Funds>
             <FundText>Required Amount</FundText>
-            <FundText>{Data.requiredAmount} Matic</FundText>
+            <FundText>{Data.requiredAmount} Ether</FundText>
           </Funds>
           <Funds>
             <FundText>Received Amount</FundText>
-            <FundText>{Data.receivedAmount} Matic</FundText>
+            <FundText>{Data.receivedAmount}Ether</FundText>
           </Funds>
         </FundsData>
         <Donated>
@@ -112,7 +112,7 @@ export default function Detail({Data, DonationsData}) {
               return (
                 <Donation key={e.timestamp}>
                 <DonationData>{e.donar.slice(0,6)}...{e.donar.slice(39)}</DonationData>
-                <DonationData>{e.amount} Matic</DonationData>
+                <DonationData>{e.amount} Ether</DonationData>
                 <DonationData>{new Date(e.timestamp * 1000).toLocaleString()}</DonationData>
               </Donation>
               )
@@ -125,7 +125,7 @@ export default function Detail({Data, DonationsData}) {
               return (
                 <Donation key={e.timestamp}>
                 <DonationData>{e.donar.slice(0,6)}...{e.donar.slice(39)}</DonationData>
-                <DonationData>{e.amount} Matic</DonationData>
+                <DonationData>{e.amount} Ether</DonationData>
                 <DonationData>{new Date(e.timestamp * 1000).toLocaleString()}</DonationData>
               </Donation>
               )
