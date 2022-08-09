@@ -19,7 +19,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
- 
+ .babelrc
 .env*.local
 .package-lock.json
  
